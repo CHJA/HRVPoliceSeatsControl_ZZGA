@@ -152,10 +152,12 @@ namespace HighResolutionApps.VisualControls.HRVPoliceSeatsControl_ZZGA
                     seatNo = Convert.ToInt32(dataTable.Rows[i]["seat_no"]);
                     status = seatStatusDict[dataTable.Rows[i]["seat_state"].ToString().Trim()];
                     // 坐席号范围不在1-30，跳过
-                    if ((seatNo < 1) || (seatNo > 30)) continue;
+                    if ((seatNo < 1) || (seatNo > 30))
+                        continue;
 
                     // 座席号的状态
-                    if ((status < 1) || (status > 3)) status = 2;
+                    if ((status < 1) || (status > 3))
+                        status = 2;
 
                     allSeatsDict[seatNo] = status;
 
