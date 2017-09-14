@@ -75,7 +75,7 @@
     <Compile Include="HRVPoliceSeatsControl_ZZGA.xaml.cs">
       <DependentUpon>HRVPoliceSeatsControl_ZZGA.xaml</DependentUpon>
     </Compile>
-    <Compile Include="HRVUserControlWrappers.cs" />
+    <Compile Include="HRVPoliceSeatsControl_ZZGAWrappers.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
