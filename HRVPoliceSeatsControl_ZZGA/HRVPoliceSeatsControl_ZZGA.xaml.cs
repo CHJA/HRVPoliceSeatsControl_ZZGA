@@ -102,7 +102,7 @@ namespace HighResolutionApps.VisualControls.HRVPoliceSeatsControl_ZZGA
             try
             {
                 SystemHelper.logger.LogDebug("HRVRegionControl_ZZGA ==============InputDataTableToChart.start============= ");
-                //判空
+                // 判空
                 if ((dataTable == null) || (dataTable.Rows.Count == 0))
                 {
                     SystemHelper.logger.LogDebug("InputDataTableToChart  DataTable 数据为空");
