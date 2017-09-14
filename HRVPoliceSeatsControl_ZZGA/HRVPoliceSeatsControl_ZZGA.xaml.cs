@@ -155,10 +155,7 @@ namespace HighResolutionApps.VisualControls.HRVPoliceSeatsControl_ZZGA
                     if ((seatNo < 1) || (seatNo > 30)) continue;
 
                     // 座席号的状态
-                    if ((status < 1) || (status > 3))
-                    {
-                        status = 2;
-                    }
+                    if ((status < 1) || (status > 3)) status = 2;
 
                     allSeatsDict[seatNo] = status;
 
