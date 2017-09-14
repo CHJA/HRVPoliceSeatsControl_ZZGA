@@ -41,8 +41,6 @@ namespace HighResolutionApps.VisualControls.HRVPoliceSeatsControl_ZZGA
 
         }
 
-
-
         /// <summary>
         /// 创建自定义数据，填充到dataTable
         /// </summary>
@@ -54,38 +52,38 @@ namespace HighResolutionApps.VisualControls.HRVPoliceSeatsControl_ZZGA
                 DataTable dt = new DataTable();
 
                 dt.Columns.Add("seat_no", typeof(int));
-                dt.Columns.Add("seat_state", typeof(int));
+                dt.Columns.Add("seat_state", typeof(string));
                 // 1-开始接警，2-闲置，3-接警结束
-                dt.Rows.Add(1, 2);
-                dt.Rows.Add(2, 1);
-                dt.Rows.Add(3, 3);
-                dt.Rows.Add(4, 1);
-                dt.Rows.Add(5, 1);
-                dt.Rows.Add(6, 1);
-                dt.Rows.Add(7, 2);
-                dt.Rows.Add(8, 2);
-                dt.Rows.Add(9, 3);
-                dt.Rows.Add(10, 3);
-                dt.Rows.Add(11, 3);
-                dt.Rows.Add(12, 3);
-                dt.Rows.Add(13, 3);
-                dt.Rows.Add(14, 3);
-                dt.Rows.Add(15, 3);
-                dt.Rows.Add(16, 2);
-                dt.Rows.Add(17, 1);
-                dt.Rows.Add(18, 3);
-                dt.Rows.Add(19, 3);
-                dt.Rows.Add(20, 3);
-                dt.Rows.Add(21, 3);
-                dt.Rows.Add(22, 3);
-                dt.Rows.Add(23, 3);
-                dt.Rows.Add(24, 3);
-                dt.Rows.Add(25, 3);
-                dt.Rows.Add(26, 3);
-                dt.Rows.Add(27, 3);
-                dt.Rows.Add(28, 3);
-                dt.Rows.Add(29, 3);
-                dt.Rows.Add(30, 3);
+                dt.Rows.Add(1, "闲置");
+                dt.Rows.Add(2, "开始接警");
+                dt.Rows.Add(3, "接警结束");
+                dt.Rows.Add(4, "开始接警");
+                dt.Rows.Add(5, "开始接警");
+                dt.Rows.Add(6, "开始接警");
+                dt.Rows.Add(7, "闲置");
+                dt.Rows.Add(8, "闲置");
+                dt.Rows.Add(9, "接警结束");
+                dt.Rows.Add(10, "接警结束");
+                dt.Rows.Add(11, "接警结束");
+                dt.Rows.Add(12, "接警结束");
+                dt.Rows.Add(13, "接警结束");
+                dt.Rows.Add(14, "接警结束");
+                dt.Rows.Add(15, "接警结束");
+                dt.Rows.Add(16, "闲置");
+                dt.Rows.Add(17, "开始接警");
+                dt.Rows.Add(18, "接警结束");
+                dt.Rows.Add(19, "接警结束");
+                dt.Rows.Add(20, "接警结束");
+                dt.Rows.Add(21, "接警结束");
+                dt.Rows.Add(22, "接警结束");
+                dt.Rows.Add(23, "接警结束");
+                dt.Rows.Add(24, "接警结束");
+                dt.Rows.Add(25, "接警结束");
+                dt.Rows.Add(26, "接警结束");
+                dt.Rows.Add(27, "接警结束");
+                dt.Rows.Add(28, "接警结束");
+                dt.Rows.Add(29, "接警结束");
+                dt.Rows.Add(30, "接警结束");
 
                 m_InputDataTable = dt;
                 SystemHelper.logger.LogDebug("HRVPoliceCasePrecentControl_ZZGA ==============InitInputDataTable.end============= ");
@@ -118,18 +116,23 @@ namespace HighResolutionApps.VisualControls.HRVPoliceSeatsControl_ZZGA
                     {21,0 },{22,0 },{23,0 },{24,0 },{25,0 },{26,0 },{27,0 },{28,0 },{29,0 },{30,0 }
                 };
 
-                Dictionary<int, string> seatStateDict = new Dictionary<int, string>
+                Dictionary<int, string> statusImgDict = new Dictionary<int, string>
                 {
                     { 1, "busy-01.png" },
                     { 2, "leave unused-01.png" },
                     { 3, "the afterwards treatment-01.png" }
                 };
 
+                Dictionary<string, int> seatStatusDict = new Dictionary<string, int>
+                {
+                    { "开始接警", 1 }, { "闲置", 2 }, { "接警结束", 3 }
+                };
+
                 dataTable.Columns[0].ColumnName = "seat_no";
                 dataTable.Columns[1].ColumnName = "seat_state";
 
                 int seatNo = 1;     // 座席号
-                int status = 2;     // 坐席状态,默认：2-闲置
+                int status = seatStatusDict["闲置"];     // 坐席状态,默认：2-闲置
                 int busyCount = 0;
                 int unusedCount = 0;
                 int untreatmentCount = 0;
@@ -140,18 +143,20 @@ namespace HighResolutionApps.VisualControls.HRVPoliceSeatsControl_ZZGA
                 {
                     seatNo = i + 1;
                     Image img = FindName("seat_state_" + seatNo) as Image;
-                    img.Source = new BitmapImage(new Uri(imgdir + seatStateDict[status]));
+                    img.Source = new BitmapImage(new Uri(imgdir + statusImgDict[status]));
                     allSeatsDict[seatNo] = status;
                 }
 
                 for (int i = 0; i < dataTable.Rows.Count; i++)
                 {
                     seatNo = Convert.ToInt32(dataTable.Rows[i]["seat_no"]);
-                    status = Convert.ToInt32(dataTable.Rows[i]["seat_state"]);
+                    status = seatStatusDict[dataTable.Rows[i]["seat_state"].ToString().Trim()];
+                    // 坐席号范围不在1-30，跳过
                     if ((seatNo < 1) || (seatNo > 30))
                     {
                         continue;
                     }
+                    // 座席号的状态
                     if ((status < 1) || (status > 3))
                     {
                         status = 2;
@@ -160,7 +165,7 @@ namespace HighResolutionApps.VisualControls.HRVPoliceSeatsControl_ZZGA
                     allSeatsDict[seatNo] = status;
 
                     Image img = FindName("seat_state_" + seatNo) as Image;
-                    img.Source = new BitmapImage(new Uri(imgdir + seatStateDict[status]));
+                    img.Source = new BitmapImage(new Uri(imgdir + statusImgDict[status]));
                     
                 }
 
