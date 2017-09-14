@@ -1,0 +1,188 @@
+﻿<UserControl x:Class="HighResolutionApps.VisualControls.HRVPoliceSeatsControl_ZZGA.HRVPoliceSeatsControl_ZZGA"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="1700">
+
+    <Grid x:Name="layoutRoot" Width="1638" Height="840">
+        <!--<Border BorderBrush="#FFF10C0C" BorderThickness="3"/>-->
+        <Grid x:Name="grid1" VerticalAlignment="Top" Margin="0,150,0,0" Height="100" HorizontalAlignment="Center" Width="1638">
+            <Grid HorizontalAlignment="Left" Margin="150,0,0,0">
+                <Grid HorizontalAlignment="Left" Width="91.2">
+                    <Image Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_1" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="114,0,0,0" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_2" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="228,0,0,0" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_3" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+            </Grid>
+            <Grid HorizontalAlignment="Center" Width="542">
+                <Grid HorizontalAlignment="Left" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_4" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/leave unused-01.png"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="114,0,0,0" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_5" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/busy-01.png"/>
+                </Grid>
+                <Grid Width="91.2" HorizontalAlignment="Center">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_6" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png" HorizontalAlignment="Left"/>
+                </Grid>
+                <Grid Margin="342,0,0,0" HorizontalAlignment="Left" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_7" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+                <Grid HorizontalAlignment="Right" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_8" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+            </Grid>
+            <Grid HorizontalAlignment="Right" Margin="0,0,150,0">
+                <Grid HorizontalAlignment="Left" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_9" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="114,0,0,0" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_10" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+                <Grid Margin="228,0,0,0" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_11" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid x:Name="grid2" Height="100" VerticalAlignment="Top" Margin="0,320,0,0" HorizontalAlignment="Center" Width="1000">
+            <Grid HorizontalAlignment="Left" Margin="60,0,0,0">
+                <Grid HorizontalAlignment="Left" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_12" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="114,0,0,0" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_13" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+            </Grid>
+            <Grid HorizontalAlignment="Center">
+                <Grid HorizontalAlignment="Left" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_14" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="114,0,0,0" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_15" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="228,0,0,0" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_16" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+            </Grid>
+            <Grid HorizontalAlignment="Right" Margin="0,0,60,0">
+                <Grid HorizontalAlignment="Left" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_17" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="114,0,0,0" Width="91.2">
+                    <Image Width="86" Height="100" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png"/>
+                    <Image x:Name="seat_state_18" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Height="560" VerticalAlignment="Bottom" Width="1638" >
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X2="250" X1="2" />
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X1="250" X2="375" Y2="230" />
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X1="375" X2="220" Y1="230" Y2="400"  />
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X1="395" X2="240" Y1="240" Y2="410"  />
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X1="395" X2="595" Y1="240" Y2="240"  />
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X1="595" X2="750" Y1="240" Y2="410"  />
+
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X2="1388" X1="1636" />
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X2="1263" X1="1388" Y2="230" />
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X2="1418" X1="1263" Y1="230" Y2="400" />
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X1="1243" X2="1398" Y1="240" Y2="410"  />
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X1="1243" X2="1043" Y1="240" Y2="240"  />
+            <Line Stroke="#FF1168A1" StrokeThickness="3" X1="1043" X2="888" Y1="240" Y2="410"  />
+            <!--No1-->
+            <Grid HorizontalAlignment="Left" Height="100" Margin="45,40,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_19" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="100" Margin="160,100,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_20" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="100" Margin="160,220,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_21" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+            <!--No2-->
+            <Grid HorizontalAlignment="Left" Height="100" Margin="340,320,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_22" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="100" Margin="450,250,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_23" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="100" Margin="560,320,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_24" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+
+            <!--No3-->
+            <Grid HorizontalAlignment="Left" Height="100" Margin="980,320,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_25" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="100" Margin="1090,250,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_26" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="100" Margin="1200,320,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_27" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+            <!--No4-->
+            <Grid HorizontalAlignment="Left" Height="100" Margin="1500,40,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_30" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="100" Margin="1388,100,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_29" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="100" Margin="1388,220,0,0" VerticalAlignment="Top" Width="91.2">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/Background of seat-01.png" Width="86"/>
+                <Image x:Name="seat_state_28" Margin="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="grid1_Title" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <TextBlock Text="接警席位状态" FontSize="66" FontFamily="宋体" Foreground="#FFFFFFFF"></TextBlock>
+        </Grid>
+        <Grid x:Name="grid_StateBar" Height="80" VerticalAlignment="Bottom">
+            <Grid x:Name="busy_state" Width="400" HorizontalAlignment="Left" Margin="220,0,0,0">
+                <Image Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/busy-01.png" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30"/>
+                <TextBlock Foreground="White" HorizontalAlignment="Left" TextWrapping="Wrap" Text="开始接警：" VerticalAlignment="Center" FontFamily="宋体" FontSize="48" Margin="50,0,0,0"/>
+                <TextBlock x:Name="busyTxt" Foreground="#FFE15154" HorizontalAlignment="Left" TextWrapping="Wrap" Text="44" VerticalAlignment="Center" FontFamily="微软雅黑" FontSize="60" Margin="300,0,0,0"/>
+            </Grid>
+            <Grid x:Name="free_state" Width="300" HorizontalAlignment="Left" Margin="670,0,0,0">
+                <Image HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/leave unused-01.png"/>
+                <TextBlock Foreground="White" HorizontalAlignment="Left" TextWrapping="Wrap" Text="闲置：" VerticalAlignment="Center" FontFamily="宋体" FontSize="48" Margin="50,0,0,0"/>
+                <TextBlock x:Name="unusedTxt" Foreground="White" HorizontalAlignment="Left" TextWrapping="Wrap" Text="16" VerticalAlignment="Center" FontFamily="微软雅黑" FontSize="60" Margin="200,0,0,0"/>
+            </Grid>
+            <Grid x:Name="after_State" Width="400" HorizontalAlignment="Left" Margin="1020,0,0,0">
+                <Image HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Source="D:/HRV_2.0/APPS/Files_Resource/ZZGA/image/Slicing/the afterwards treatment-01.png"/>
+                <TextBlock Foreground="White" HorizontalAlignment="Left" TextWrapping="Wrap" Text="接警结束：" VerticalAlignment="Center" FontFamily="宋体" FontSize="48" Margin="50,0,0,0"/>
+                <TextBlock x:Name="untreatmentTxt" Foreground="#FF71DAFF" HorizontalAlignment="Left" TextWrapping="Wrap" Text="27" VerticalAlignment="Center" FontFamily="微软雅黑" FontSize="60" Margin="300,0,0,0"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
